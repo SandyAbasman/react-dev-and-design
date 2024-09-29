@@ -1,2 +1,21 @@
  CSS VARIABLES 
  css variables allow us to save styling and can easly reused 
+
+
+
+transition
+implement interactions on only elements user will interact with
+
+
+
+
+css Animations 
+
+for transition to happern they need to be a trigger 
+but for animation you don't neccesily need a trigger 
+
+CSS Animations 
+for transition to happen they need to be a trigger 
+but for animation you don't necessary need a trigger
+we use key frames for animations 
+key frame is a utility like media queries

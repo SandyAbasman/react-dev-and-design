@@ -10,7 +10,7 @@
 :root {
   /* COLOR VARIABLES */
   --backgroundColor: #f8f8f8;
-  --bigTextColor: #2e1f55;
+  --bigTextColor: #2f1b63;
   --smallTextColor: #636363;
   --outlineColor: #989898;
 
@@ -27,6 +27,15 @@
   --bigRowGapSpace: 4rem;
   --smallRowGapSpace: 1rem;
   --smallerRowGapSpace: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* COLOR VARIABLES */
+    --backgroundColor: #371456;
+    --bigTextColor: #f8f8f8;
+    --smallTextColor: #d9d9d9;
+  }
 }
 
 .card-container {
@@ -61,6 +70,7 @@
 .premuim-container p {
   font-size: var(--titleTextsize);
   font-weight: 700;
+  color: var(--bigTextColor);
 }
 
 .price_and_time_container {
