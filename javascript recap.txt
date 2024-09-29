@@ -1,0 +1,2 @@
+ CSS VARIABLES 
+ css variables allow us to save styling and can easly reused 

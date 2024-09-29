@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  /* COLOR VARIABLES */
+  --backgroundColor: #f8f8f8;
+  --bigTextColor: #2e1f55;
+  --smallTextColor: #636363;
+  --outlineColor: #989898;
+
+  /* TEXT VARARBLES*/
+  --headlineTextSize: 3.35rem;
+  --bodyTextSize: 1rem;
+  --buttonTextSize: 1.1rem;
+  --titleTextsize: 1.25rerm;
+
+  /* SPACE VARABLES */
+  --bigPadding: 2rem;
+  --smallPadding: 1rem;
+  --columGapSPace: 0.75rem;
+  --bigRowGapSpace: 4rem;
+  --smallRowGapSpace: 1rem;
+  --smallerRowGapSpace: 0.75rem;
+}
+
+.card-container {
+  width: 32%;
+  height: auto;
+  background-color: var(--backgroundColor);
+  margin: 3rem auto;
+  padding: var(--bigPadding);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: var(--bigRowGapSpace);
+  border: 0.5px solid var(--outlineColor);
+}
+
+.top-card-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.premuim-container {
+  width: fit-content;
+  height: auto;
+}
+
+.premuim-container p {
+  font-size: var(--titleTextsize);
+  font-weight: 700;
+}
+
+.price_and_time_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  column-gap: 0.1rem;
+}
+
+.price_and_time_container h1 {
+  font-size: var(--headlineTextSize);
+  color: var(--bigTextColor);
+}
+.price_and_time_container p {
+  color: var(--smallTextColor);
+  font-size: var(--bodyTextSize);
+}
+.card-description-container {
+  width: 100%;
+  height: auto;
+}
+
+.card-description-container p {
+  color: var(--smallTextColor);
+  font-size: var(--bodyTextSize);
+}
+
+.bottom-card-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: var(--smallRowGapSpace);
+}
+
+.card_image_container {
+  width: 100%;
+  height: auto;
+  background-image: url(./image/apple\ orange.jpg);
+  padding: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.card-button-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.finger-print-box {
+  background-color: black;
+  width: fit-content;
+  height: auto;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+button {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: 500;
+}
