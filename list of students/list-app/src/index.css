@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+.main-container {
+  margin: 4rem auto;
+  width: 36%;
+  height: auto;
+}
+
+.student-container {
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: first baseline;
+  border-bottom: 0.75px solid #c6c6c6;
+}
+
+.left-content-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 0.5rem;
+}
+
+.student-name-container,
+.student-email-container {
+  width: fit-content;
+  height: auto;
+}
+
+.student-name-container h1 {
+  font-size: 1rem;
+  color: #392c2c;
+}
+
+.student-email-container p {
+  font-size: 0.8rem;
+  color: #595959;
+}
+
+.right-content-section {
+  width: fit-content;
+  height: auto;
+}
+.student-Id-container {
+  width: 100%;
+  height: auto;
+}
+
+.student-Id-container p {
+  font-size: 0.8rem;
+  text-wrap: nowrap;
+}

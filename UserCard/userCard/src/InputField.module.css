@@ -1,0 +1,50 @@
+.form {
+  width: 35rem;
+  height: auto;
+  border: 1px solid rgb(232, 229, 229);
+  margin: 8rem auto;
+  background-color: rgb(237, 226, 206);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  row-gap: 1rem;
+}
+
+.button {
+  padding: 0.8rem;
+  background: black;
+  color: white;
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: rgb(82, 82, 82);
+}
+
+.input {
+  width: 100%;
+  height: auto;
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1rem;
+  color: #5c5c5c;
+}
+
+.h3 {
+  font-size: 1.2rem;
+  color: #1f1f1f;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+  height: auto;
+}
