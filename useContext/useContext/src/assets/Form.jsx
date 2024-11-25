@@ -9,7 +9,6 @@ function Form() {
     <div className="bg-red-400 w-full h-auto p-10">
       <Name />
       <p>my name is {name} </p>
-
       <button
         className=" p-1  text-white rounded-md mt-2 bg-black"
         onClick={() => setName(name === "sandy" ? "abas" : "sandy")}
