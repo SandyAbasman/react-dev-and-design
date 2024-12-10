@@ -12,6 +12,8 @@ import AboutAbas from "./AboutAbas.jsx";
 import AboutSandy from "./AboutSandy.jsx";
 import NotFound from "./NotFound.jsx";
 import Jobslayout from "./jobslayout.jsx";
+import JobDetails, { jobDetails } from "./JobDetails.jsx";
+import Jobs from "./jobs.jsx";
 
 function App() {
   const myRouter = createBrowserRouter(
@@ -26,7 +28,10 @@ function App() {
 
         <Route path="contact" element={<Contact />} />
 
-        <Route path="jobs" element={<Jobslayout />} loader ={data} />
+        <Route path="jobs" element={<Jobslayout />} loader={data}>
+          <Route index element={<Jobs />} loader={data} />
+          <Route path=":id" element={<JobDetails />} loader={jobDetails} />
+        </Route>
 
         <Route path="*" element={<NotFound />} />
       </Route>
@@ -39,10 +44,9 @@ function App() {
   );
 }
 
-
- export const data = async function (){
-  const response = await fetch("http://localhost:4000/myData")
-  return response.json()
-}
+export const data = async function () {
+  const response = await fetch("http://localhost:4000/myData");
+  return response.json();
+};
 
 export default App;

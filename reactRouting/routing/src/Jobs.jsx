@@ -1,16 +1,21 @@
 import { useLoaderData } from "react-router-dom";
-import data from "./App.jsx";
+
+import { Link } from "react-router-dom";
 
 function Jobs() {
-  const mydata = useLoaderData(data);
+  const mydata = useLoaderData();
+
   return (
     <div>
+      <h3>this are the available jobs</h3>
       {mydata.map(function (item, index) {
         return (
-          <div className="border w-fit h-auto p-5 m-4" key={index}>
-            <h3>{item.firstname}</h3>
-            <p>{item.lastname}</p>
-          </div>
+          <Link to={item.id.toString()} key={index}>
+            <div className="border w-fit h-auto p-5 m-4">
+              <h3>{item.jobTitle}</h3>
+              <p>{item.location}</p>
+            </div>
+          </Link>
         );
       })}
     </div>
