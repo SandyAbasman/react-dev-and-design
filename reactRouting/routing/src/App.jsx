@@ -14,6 +14,7 @@ import NotFound from "./NotFound.jsx";
 import Jobslayout from "./jobslayout.jsx";
 import JobDetails, { jobDetails } from "./JobDetails.jsx";
 import Jobs from "./jobs.jsx";
+import ErrorElement from "./ErrorElement.jsx";
 
 function App() {
   const myRouter = createBrowserRouter(
@@ -28,7 +29,11 @@ function App() {
 
         <Route path="contact" element={<Contact />} />
 
-        <Route path="jobs" element={<Jobslayout />} loader={data}>
+        <Route
+          path="jobs"
+          element={<Jobslayout />}
+          errorElement={<ErrorElement />}
+        >
           <Route index element={<Jobs />} loader={data} />
           <Route path=":id" element={<JobDetails />} loader={jobDetails} />
         </Route>
@@ -46,6 +51,10 @@ function App() {
 
 export const data = async function () {
   const response = await fetch("http://localhost:4000/myData");
+
+  if (!response.ok) {
+    throw Error("data not found");
+  }
   return response.json();
 };
 
