@@ -30,7 +30,7 @@ export default function InputComponent() {
     >
       <label className=" bg-inherit text-black/50 font-semibold text-md flex flex-row">
         Add Tags
-        <span className=" bg-inherit text-black/20 text-md font-semibold flex flex-row justify-start items-center gap-1">
+        <span className=" bg-inherit text-black/20 text-sm font-medium flex flex-row justify-start items-center gap-1">
           (max.8)
           <BsFillInfoCircleFill />
         </span>

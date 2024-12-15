@@ -8,5 +8,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Bricolage Grotesque", sans-serif;
-  /* background-color: #f8f8f8; */
+}
+
+body {
+  background-color: #f8f8f8;
 }
