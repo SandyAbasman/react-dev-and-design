@@ -4,13 +4,13 @@ import Chips from "./Chips";
 import { useState } from "react";
 
 export default function InputComponent() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState(" ");
   const [fullList, setFullList] = useState([]);
 
   const handleSubmission = (e) => {
     e.preventDefault();
 
-    if (text == " ") {
+    if (text === " ") {
       return;
     }
 
@@ -23,12 +23,19 @@ export default function InputComponent() {
     setText(" ");
   };
 
+  function deleteChip(index) {
+    const filterdList = fullList.filter((item, filteredIndex) => {
+      return filteredIndex !== index;
+    });
+    setFullList(filterdList);
+  }
+
   return (
     <form
       onSubmit={handleSubmission}
-      className="w-full h-auto flex  flex-col justify-start items-start  gap-1 bg-inherit  "
+      className="w-full h-auto flex  flex-col justify-start items-start  gap-2 bg-inherit  "
     >
-      <label className=" bg-inherit text-black/50 font-semibold text-md flex flex-row">
+      <label className=" bg-inherit text-black/50  font-semibold text-md flex flex-row">
         Add Tags
         <span className=" bg-inherit text-black/20 text-sm font-medium flex flex-row justify-start items-center gap-1">
           (max.8)
@@ -52,7 +59,14 @@ export default function InputComponent() {
         </div>
         <div className="w-full h-auto flex flex-row gap-1">
           {fullList.map(function (item, index) {
-            return <Chips key={index} text={item} />;
+            return (
+              <Chips
+                key={index}
+                text={item}
+                deleteChip={deleteChip}
+                index={index}
+              />
+            );
           })}
         </div>
       </div>

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function LowerComponent({ title, discription, buttonName }) {
   return (
-    <div className="w-full h-auto  border-dashed border-t-2 border-gray-300 py-6 px-2 flex flex-row justify-between items-center">
+    <div className="w-full h-auto  border-dashed border-t-2 border-gray-300 py-3 px-2 flex flex-row justify-between items-center">
       <div className="flex flex-col gap-2">
         <h3 className="text-lg font-semibold text-black/50">{title}</h3>
         <p className="text-sm text-black/40 font-thin">{discription}</p>
