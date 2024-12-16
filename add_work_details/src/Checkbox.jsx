@@ -14,7 +14,7 @@ function Checkbox({ label, children }) {
         />
       ) : (
         <BiSolidCheckboxChecked
-          color={"orange"}
+          color={"green"}
           className=" w-6 h-6 bg-transparent "
           onClick={() => setIsCheck(true)}
         />

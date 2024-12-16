@@ -46,7 +46,7 @@ export default function InputComponent() {
         <input
           value={text}
           onChange={(e) => setText(e.target.value)}
-          className="w-full h-auto border-[2px] border-black/10 outline-none focus:border-orange-200/80 rounded-xl bg-white p-3 "
+          className="w-full h-auto border-[2px] border-black/10 outline-none focus:border-green-400/80 rounded-xl bg-white p-3 "
           type="text"
           placeholder="Add tags..."
         />
