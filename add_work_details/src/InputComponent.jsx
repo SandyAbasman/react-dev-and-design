@@ -57,7 +57,7 @@ export default function InputComponent() {
             className="bg-transparent"
           />
         </div>
-        <div className="w-full h-auto flex flex-row gap-1">
+        <div className="w-full h-auto flex flex-row flex-wrap gap-1">
           {fullList.map(function (item, index) {
             return (
               <Chips
